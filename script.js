@@ -5,7 +5,6 @@ init();
 animate();
 
 function init() {
-    // Scene setup
     scene = new THREE.Scene();
     camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
     camera.position.set(0, 0, 5);
@@ -18,7 +17,7 @@ function init() {
     light.position.set(5, 5, 5).normalize();
     scene.add(light);
 
-    const ambientLight = new THREE.AmbientLight(0x404040); // Ambient light
+    const ambientLight = new THREE.AmbientLight(0x404040);
     scene.add(ambientLight);
 
     window.addEventListener('resize', onWindowResize, false);
@@ -66,8 +65,6 @@ function handleUpload(event) {
                 centerObject();
                 scene.add(currentObject);
                 updateRotationDisplay();
-            }, function (xhr) {
-                // Progress callback (not used in this example)
             }, function (error) {
                 showErrorAlert('Error loading the file.');
             });
