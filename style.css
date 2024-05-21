@@ -1,4 +1,7 @@
-body { margin: 0; }
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
 canvas { display: block; }
 .controls {
     position: absolute;
@@ -42,4 +45,7 @@ canvas { display: block; }
     margin: 5px;
     padding: 5px 10px;
     font-size: 16px;
+}
+.custom-swal-font {
+    font-family: Arial, sans-serif;
 }
