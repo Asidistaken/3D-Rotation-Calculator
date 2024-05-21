@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three.js Object Manipulation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="controls">
+        <input type="file" id="upload">
+        <button id="cube">Cube</button>
+        <button id="quadrangularPrism">Quadrangular Prism</button>
+        <button id="cone">Cone</button>
+    </div>
+    <div class="rotation-values" id="rotation-values">
+        Rotation: X: 0, Y: 0, Z: 0
+    </div>
+    <div class="rotation-buttons">
+        <div class="axis-buttons">
+            <button id="rotateXPositive">Rotate X +</button>
+            <button id="rotateXNegative">Rotate X -</button>
+        </div>
+        <div class="axis-buttons">
+            <button id="rotateYPositive">Rotate Y +</button>
+            <button id="rotateYNegative">Rotate Y -</button>
+        </div>
+        <div class="axis-buttons">
+            <button id="rotateZPositive">Rotate Z +</button>
+            <button id="rotateZNegative">Rotate Z -</button>
+        </div>
+    </div>
+    <div class="zoom-buttons">
+        <button id="zoomIn">Zoom In</button>
+        <button id="zoomOut">Zoom Out</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/FBXLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/OBJLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/STLLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
+</html>
