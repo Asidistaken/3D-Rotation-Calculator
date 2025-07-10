@@ -4,4 +4,4 @@ This web application allows users to upload their 3D models or choose pre-added 
 
 ## License
 
-This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
+This project is licensed under the [MIT License](LICENSE).
